@@ -1,0 +1,22 @@
+[
+  {"id":0,"testo":"Sei un finoskio?","risposta":[
+                                                  {"id":0,"desc": "si","corretta": false},
+                                                  {"id":1,"desc": "no","corretta": true},
+                                                  {"id":2,"desc": "non so ancora","corretta": false}
+                                                ],"pt":5},
+  {"id":1,"testo":"Cos'è uno zebby?","risposta":[
+                                                  {"id":0,"desc": "Lo strumento, Il tronco, La mazza, Il membro","corretta": true},
+                                                  {"id":1,"desc": "Le palle","corretta": false},
+                                                  {"id":2,"desc": "Il culo","corretta": false}
+                                                ],"pt":5},
+  {"id":2,"testo":"Dove si trova la Banshuria?","risposta":[
+                                                  {"id":0,"desc": "Non esiste","corretta": false},
+                                                  {"id":1,"desc": "In Bangladesh","corretta": false},
+                                                  {"id":2,"desc": "In Albania","corretta": false}
+                                                ],"pt":5},
+  {"id":3,"testo":"Qual'è il nome del dio ghane?","risposta":[
+                                                  {"id":0,"desc": "Non si può dare un nome al dio ghane","corretta": false},
+                                                  {"id":1,"desc": "Non esiste il dio ghane, è frutto della tua immaginazione","corretta": false},
+                                                  {"id":2,"desc": "Giuanin","corretta": true}
+                                                ],"pt":5}
+]
