@@ -1,0 +1,22 @@
+[
+  {"id":0,"testo":"Sei un finoskio?","risposta":[
+                                                  {"desc": "si","corretta": false},
+                                                  {"desc": "no","corretta": true},
+                                                  {"desc": "non so ancora","corretta": false}
+                                                ],"pt":5},
+  {"id":1,"testo":"Cos'è uno zebby?","risposta":[
+                                                  {"desc": "Lo strumento, Il tronco, La mazza, Il membro","corretta": true},
+                                                  {"desc": "Le palle","corretta": false},
+                                                  {"desc": "Il culo","corretta": false}
+                                                ],"pt":5},
+  {"id":1,"testo":"Dove si trova la Banshuria?","risposta":[
+                                                  {"desc": "Non esiste","corretta": false},
+                                                  {"desc": "In Bangladesh","corretta": false},
+                                                  {"desc": "In Albania","corretta": false}
+                                                ],"pt":5},
+  {"id":1,"testo":"Qual'è il nome di dio?","risposta":[
+                                                  {"desc": "Non si può dare un nome a dio","corretta": false},
+                                                  {"desc": "Non esiste dio","corretta": false},
+                                                  {"desc": "Giuanin","corretta": true}
+                                                ],"pt":5}
+]
