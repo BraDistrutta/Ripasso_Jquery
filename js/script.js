@@ -9,7 +9,7 @@ window.onload = function (){
         async (response)=>{
             let ris = await response.json();
             domande = ris;
-            console.log(ris);
+            //console.log(ris);
             let div = document.getElementById("divDomande");
 
             for(let j in ris){
@@ -42,7 +42,7 @@ function controlla() {
     if(ris.length == (radios.length)/3){
         let cont = 0;
         for(let risposta of ris){
-            console.log(risposta);
+            //console.log(risposta);
 
             if(!domande[risposta.name].risposta[risposta.value].corretta ){
                 risposta.style.accentColor = "red";
@@ -64,7 +64,7 @@ function controlla() {
     else{
         alert("Sei un finosckio");
     }
-    console.log(JSON.stringify(risultati));
+    //console.log(JSON.stringify(risultati));
 
     let a = document.createElement("a");
     a.download = "zebby.json";
@@ -73,7 +73,7 @@ function controlla() {
 }
 
 function premuto(event) {
-    console.log(event);
+    //console.log(event);
 
     if(event.key == "Backspace")
         filtro = filtro.substring(0,filtro.length-1);
@@ -81,13 +81,13 @@ function premuto(event) {
         filtro += event.key.substring(0,0).toUpperCase();
     else
         filtro += event.key;
-    console.log(filtro);
+    //console.log(filtro);
 
 
     let divs = document.getElementsByTagName("div");
     for(let i=0;i<4;i++){
         divs[(i*4)+1].style.visibility = "visible";
-        console.log(divs[(i*4)+1].innerText.split('\n')[0]);
+        //console.log(divs[(i*4)+1].innerText.split('\n')[0]);
         if(!(divs[(i*4)+1].innerText.split('\n')[0].includes(filtro))){
             //divs[(i*4)+1].innerHTML = "<!--" + divs[(i*4)+1].innerHTML + "-->";
             console.log(divs[(i*4)+1]);

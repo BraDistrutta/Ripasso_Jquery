@@ -1,12 +1,32 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 97.5vh;
+}
+
 header{
     background-color: #badce3;
+    width: 100%;
 }
 
 main{
     background-color: #abdde5;
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#divDomande > div{
+    padding: 5px;
+    margin: 5px;
 }
 
 footer{
     background-color: #fdf5ce;
+    padding: 0 50px;
 }
 
