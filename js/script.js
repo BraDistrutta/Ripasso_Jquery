@@ -1,6 +1,7 @@
 let indirizzo = window.location.href.substring(0,45)+"php/";
 var domande = [];
 var risultati = [];
+var filtro = "";
 
 window.onload = function (){
     let promise = fetch(indirizzo + "domande.php");
@@ -69,5 +70,29 @@ function controlla() {
     a.download = "zebby.json";
     a.href = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(risultati));
     a.click();
+}
+
+function premuto(event) {
+    console.log(event);
+
+    if(event.key == "Backspace")
+        filtro = filtro.substring(0,filtro.length-1);
+    else if(event.key.includes("Shift"))
+        filtro += event.key.substring(0,0).toUpperCase();
+    else
+        filtro += event.key;
+    console.log(filtro);
+
+
+    let divs = document.getElementsByTagName("div");
+    for(let i=0;i<4;i++){
+        divs[(i*4)+1].style.visibility = "visible";
+        console.log(divs[(i*4)+1].innerText.split('\n')[0]);
+        if(!(divs[(i*4)+1].innerText.split('\n')[0].includes(filtro))){
+            //divs[(i*4)+1].innerHTML = "<!--" + divs[(i*4)+1].innerHTML + "-->";
+            console.log(divs[(i*4)+1]);
+            divs[(i*4)+1].style.visibility = "hidden";
+        }
+    }
 }
 
