@@ -11,7 +11,7 @@
                                                 ],"pt":5},
   {"id":2,"testo":"Dove si trova la Banshuria?","risposta":[
                                                   {"id":0,"desc": "Non esiste","corretta": false},
-                                                  {"id":1,"desc": "In Bangladesh","corretta": false},
+                                                  {"id":1,"desc": "In Bangladesh","corretta": true},
                                                   {"id":2,"desc": "In Albania","corretta": false}
                                                 ],"pt":5},
   {"id":3,"testo":"Qual'è il nome del dio ghane?","risposta":[
