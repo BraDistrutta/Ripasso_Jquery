@@ -67,7 +67,7 @@ function controlla() {
 
     let a = document.createElement("a");
     a.setAttribute("download","zebby.json");
-    a.href = JSON.stringify(risultati);
+    a.href = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(risultati));
     a.click();
 }
 
